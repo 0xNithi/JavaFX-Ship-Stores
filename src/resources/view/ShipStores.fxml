@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="530.0" prefWidth="640.0" style="-fx-background-color: #293556;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.ShipStoresController">
+   <children>
+      <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: #3b4c7d; -fx-background-radius: 20; -fx-background-insets: 10 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="480.0" prefWidth="595.0" style="-fx-background-radius: 10;">
+               <columns>
+                  <TableColumn fx:id="columnDate" prefWidth="120.0" sortType="DESCENDING" text="Date" />
+                  <TableColumn fx:id="columnShip" prefWidth="110.0" text="Ship" />
+                  <TableColumn fx:id="columnDetail" prefWidth="140.0" text="Detail" />
+                  <TableColumn fx:id="columnStatus" prefWidth="75.0" text="Status" />
+                  <TableColumn fx:id="columnOptions" prefWidth="130.0" resizable="false" sortable="false" text="Options">
+                     <columns>
+                        <TableColumn fx:id="columnSend" prefWidth="65.0" />
+                        <TableColumn fx:id="columnDelete" prefWidth="65.0" resizable="false" sortable="false" />
+                     </columns>
+                  </TableColumn>
+               </columns></TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

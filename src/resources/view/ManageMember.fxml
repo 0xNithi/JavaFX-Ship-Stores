@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="530.0" prefWidth="640.0" style="-fx-background-color: #293556;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.ManageMemberController">
+   <children>
+      <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: #3b4c7d; -fx-background-radius: 20; -fx-background-insets: 10 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="480.0" prefWidth="595.0" style="-fx-background-radius: 10;">
+               <columns>
+                  <TableColumn fx:id="columnId" prefWidth="40.0" text="ID" />
+                  <TableColumn fx:id="columnUsername" text="Username" />
+                  <TableColumn fx:id="columnPassword" prefWidth="70.0" text="Password" />
+                  <TableColumn fx:id="columnName" prefWidth="150.0" text="Name" />
+                  <TableColumn fx:id="columnType" prefWidth="100.0" text="Type" />
+                  <TableColumn fx:id="columnOptions" prefWidth="130.0" resizable="false" sortable="false" text="Options">
+                     <columns>
+                        <TableColumn fx:id="columnUpdate" prefWidth="65.0" resizable="false" sortable="false" />
+                        <TableColumn fx:id="columnDelete" prefWidth="65.0" resizable="false" sortable="false" />
+                     </columns>
+                  </TableColumn>
+               </columns></TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 14, 2020, 9:35:05 PM
+    Author     : bossn
+*/
+
+.btn-submit {
+    -fx-background-color: #00bdaa;
+}
+
+.btn-send {
+    -fx-background-color: #f8dc88;
+}
+
+.btn-delete, .btn-cancel {
+    -fx-background-color: #f76a8c;
+}
+
+.btn-submit, .btn-cancel {
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.btn-submit:hover, .btn-cancel:hover {
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+    -fx-cursor: hand;
+}
+
+.btn-submit:pressed, .btn-cancel:pressed {
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+}
+
+.table-row-cell .text {
+    -fx-fill: black;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+.table-row-cell:selected .button .text {
+    -fx-fill: black;
+}

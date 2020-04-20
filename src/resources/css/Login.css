@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 4, 2020, 6:42:02 PM
+    Author     : bossn
+*/
+
+.input {
+    -fx-background-color: transparent;
+    -fx-text-inner-color: white;
+    -fx-border-color: #a2a2a2;
+    -fx-border-width: 0 0 2 0;
+}
+
+.btn {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-text-fill: #293556;
+}
+
+.btn:hover {
+    -fx-background-color: #3E60C1;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius: 10;
+    -fx-border-width: 5;
+    -fx-cursor: hand;
+}
+
+.btn:pressed {
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+}

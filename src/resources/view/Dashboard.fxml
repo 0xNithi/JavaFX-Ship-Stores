@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="530.0" prefWidth="640.0" style="-fx-background-color: #293556;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.DashboardController">
+   <children>
+      <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: #3b4c7d; -fx-background-radius: 20; -fx-background-insets: 10 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="265.0" prefWidth="640.0" spacing="15.0">
+               <children>
+                  <PieChart fx:id="pieChart" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="235.0" prefWidth="250.0" style="-fx-background-color: white; -fx-background-radius: 10 0 0 0;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </PieChart>
+                  <BarChart fx:id="barChart" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="235.0" prefWidth="330.0" style="-fx-background-color: white; -fx-background-radius: 0 10 0 0;">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="265.0" prefWidth="640.0" spacing="15.0">
+               <children>
+                  <BarChart fx:id="barChart2" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="235.0" prefWidth="330.0" style="-fx-background-color: white; -fx-background-radius: 0 0 0 10;">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </BarChart>
+                  <PieChart fx:id="pieChart2" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="235.0" prefWidth="250.0" style="-fx-background-color: white; -fx-background-radius: 0 0 10 0;" />
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.LoginController">
+    <children>
+        <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox>
+                    <children>
+                        <VBox style="-fx-background-color: #293556;" HBox.hgrow="ALWAYS" />
+                        <VBox style="-fx-background-color: #404040;" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="450.0" prefWidth="350.0" StackPane.alignment="CENTER">
+                    <StackPane.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                    </StackPane.margin>
+                    <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="450.0" prefWidth="350.0" style="-fx-background-color: #2E4583; -fx-background-radius: 20PX;">
+                            <children>
+                                <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="90.0" prefWidth="350.0" spacing="20.0">
+                                    <children>
+                                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                                            <image>
+                                                <Image url="@../images/login/anchor.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="20.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <Text stroke="WHITE" style="-fx-fill: white;" text="Ship Store">
+                                            <font>
+                                                <Font name="SansSerif Regular" size="45.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets bottom="20.0" />
+                                            </HBox.margin>
+                                            <rotationAxis>
+                                                <Point3D x="1.0" y="1.0" z="1.0" />
+                                            </rotationAxis>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="350.0" spacing="10.0" style="-fx-background-color: transparent;">
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                    <children>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0">
+                                            <image>
+                                                <Image url="@../images/login/username.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets top="20.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="270.0">
+                                            <children>
+                                                <Label style="-fx-text-fill: white;" text="Username">
+                                                    <font>
+                                                        <Font name="System Bold" size="14.0" />
+                                                    </font>
+                                                    <VBox.margin>
+                                                        <Insets top="30.0" />
+                                                    </VBox.margin>
+                                                </Label>
+                                                <TextField fx:id="username" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="230.0" promptText="Enter your username" styleClass="input" stylesheets="@../css/Login.css" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="70.0" prefWidth="350.0" spacing="10.0" style="-fx-background-color: transparent;">
+                                    <children>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0">
+                                            <image>
+                                                <Image url="@../images/login/password.png" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets top="10.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="270.0">
+                                            <children>
+                                                <Label style="-fx-text-fill: white;" text="Password">
+                                                    <font>
+                                                        <Font name="System Bold" size="14.0" />
+                                                    </font>
+                                                    <VBox.margin>
+                                                        <Insets top="10.0" />
+                                                    </VBox.margin>
+                                                </Label>
+                                                <PasswordField fx:id="password" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="230.0" promptText="Enter your password" styleClass="input" stylesheets="@../css/Login.css" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="110.0" prefWidth="350.0">
+                                    <children>
+                                        <Button fx:id="btnLogin" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#login" prefHeight="55.0" prefWidth="275.0" styleClass="btn" stylesheets="@../css/Login.css" text="Login">
+                                            <font>
+                                                <Font name="SansSerif Regular" size="20.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                        </Button>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="350.0">
+                                    <children>
+                                        <ProgressBar fx:id="progress" prefHeight="10.0" prefWidth="280.0" progress="1.0">
+                                            <HBox.margin>
+                                                <Insets left="35.0" />
+                                            </HBox.margin>
+                                        </ProgressBar>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </StackPane>
+    </children>
+</AnchorPane>

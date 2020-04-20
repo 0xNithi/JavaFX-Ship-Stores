@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2020, 3:44:06 PM
+    Author     : bossn
+*/
+
+
+.button {
+    -fx-background-color: #3E60C1;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-pref-width: 200;
+    -fx-pref-height: 40;
+}
+
+.button:hover, .btn-insert:hover {
+    -fx-background-radius: 15;
+    -fx-border-color: white;
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+    -fx-cursor: hand;
+    -fx-padding: .15em 0;
+}
+
+.button:pressed {
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+}
+
+.btn-about {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 3;
+    -fx-text-fill: white;
+    -fx-pref-width: 220;
+    -fx-pref-height: 40;
+}
+
+.btn-about:hover {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-border-color: #3E60C1;
+    -fx-border-radius: 0;
+    -fx-text-fill: #3E60C1;
+    -fx-cursor: hand;
+}
+
+.btn-insert {
+    -fx-pref-width: auto;
+}
+
+.btn-insert:hover {
+    -fx-padding: .15em .5em;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url('/resources/images/main/menu-button.png');
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-padding: 5;
+}
+
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}

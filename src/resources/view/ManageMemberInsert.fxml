@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="400.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.ManageMemberInsertController">
+    <children>
+        <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox>
+                    <children>
+                        <VBox style="-fx-background-color: #293556;" HBox.hgrow="ALWAYS" />
+                        <VBox style="-fx-background-color: #404040;" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="490.0" prefWidth="350.0" StackPane.alignment="CENTER">
+                    <StackPane.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                    </StackPane.margin>
+                    <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="495.0" prefWidth="400.0" style="-fx-background-color: #2E4583; -fx-background-radius: 20PX;">
+                            <children>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="70.0" prefWidth="350.0" spacing="10.0" style="-fx-background-color: transparent;">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="132.0" text="Insert" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" spacing="5.0" style="-fx-background-color: transparent;">
+                                    <VBox.margin>
+                                        <Insets right="30.0" />
+                                    </VBox.margin>
+                                    <children>
+                              <Label text="Username : " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                                          <TextField fx:id="username" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="170.0" promptText="Enter username" styleClass="input" stylesheets="@../css/Login.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" spacing="5.0" style="-fx-background-color: transparent;">
+                                    <VBox.margin>
+                                        <Insets right="30.0" />
+                                    </VBox.margin>
+                           <children>
+                              <Label text="Password : " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <PasswordField fx:id="password" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="170.0" promptText="Enter Password" styleClass="input" stylesheets="@../css/Login.css" />
+                           </children>
+                                </HBox>
+                                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" spacing="5.0">
+                                    <VBox.margin>
+                                        <Insets right="30.0" />
+                                    </VBox.margin>
+                           <children>
+                              <Label text="Name : " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="name" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="170.0" promptText="Enter name" styleClass="input" stylesheets="@../css/Login.css">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                                </HBox>
+                                <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" spacing="5.0">
+                           <children>
+                              <Label text="Type : " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <MenuButton fx:id="btnType" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" text="Select type">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#setShip" text="ship" />
+                                  <MenuItem mnemonicParsing="false" onAction="#setSuppliers" text="suppliers" />
+                                    <MenuItem mnemonicParsing="false" onAction="#setAdmin" text="admin" />
+                                </items>
+                              </MenuButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets right="30.0" />
+                           </VBox.margin>
+                                </HBox>
+                        <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" spacing="5.0">
+                           <children>
+                              <Label text="Image : " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <Button fx:id="btnFile" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" text="Choose file" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" spacing="5.0">
+                           <children>
+                              <Label text="Detail : " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextArea fx:id="detail" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="170.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets right="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="350.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="btnSubmit" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="100.0" styleClass="btn-submit" stylesheets="@../css/Suppliers.css" text="Submit">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#cancel" prefHeight="35.0" prefWidth="100.0" styleClass="btn-cancel" stylesheets="@../css/Suppliers.css" text="Cancel">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </StackPane>
+    </children>
+</AnchorPane>
